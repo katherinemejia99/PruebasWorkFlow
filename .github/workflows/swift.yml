@@ -1,1 +1,13 @@
-
+name: Swift
+on: [push]
+jobs: 
+  build: 
+    
+      runs-on: macos-lastest
+      steps:
+        - uses: action/chechkout@v3
+        - name: Build
+          run: swift build
+        - name: Run tests
+          run: swift test
+          
