@@ -1,10 +1,6 @@
 name: learn-github-action
 on: 
-  pull_request_review:
-    types: [submitted]
-    branches:
-      - main
-      - test1
+  - push
 jobs: 
    check-bats-version:
     runs-on: ubuntu-latest
